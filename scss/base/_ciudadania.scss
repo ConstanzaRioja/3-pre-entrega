@@ -1,0 +1,84 @@
+
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    nav{
+        ul{
+            display: flex;
+            gap: 10px;
+            margin-right: 20px;
+            li{
+                list-style: none;
+                margin-top: 10px;
+                a{
+                    color: #0582ca;
+                    text-decoration: none;
+                    font-family: "Roboto", sans-serif;
+                    font-weight: 300;
+                    font-style: normal;
+                }
+            }
+        }
+    }
+}
+
+main{
+    margin: 0px 30px;
+    display: grid;
+    align-content: center;
+    row-gap: 10px;
+    h1{
+        text-align: center;
+        }
+    h2{
+        @extend h1;
+    }
+    h3{
+        @extend h1
+    }
+    p{
+        margin-top: 20px;
+        color: #f5f1ed;
+    }
+    .animate_animated{
+        display: inline-block;
+        margin: 0 0.5rem;animation: flipInX;
+        animation-duration: 2s;
+        list-style: none;
+
+    }
+    div{
+        .img-pasaporte{
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            img{
+                width: 100%;
+            }
+        }
+    }
+}
+
+footer{
+    margin-top: 100px;
+    display: inline;
+    text-align: center;
+    p{
+        margin-top: 30px;
+    }
+    .buttom{
+        margin-top: 30px;
+        color: #f5f1ed;
+        border: #f5f1ed;
+        display: grid;
+        align-content:end;
+        animation: bounceIn;
+        animation-duration: 5s
+    }
+}
+
+
+
