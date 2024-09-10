@@ -1,27 +1,7 @@
 //nesting
 
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    nav{
-        ul{
-            display: flex;
-            gap: 10px;
-            margin-right: 20px;
-            li{
-                list-style: none;
-                margin-top: 10px;
-                a{
-                    color: #0582ca;
-                    text-decoration: none;
-                    font-family: "Roboto", sans-serif;
-                    font-weight: 300;
-                    font-style: normal;
-                }
-            }
-        }
-    }
+    @include header;
 }
 
 main{
@@ -48,11 +28,6 @@ main{
 }
     
 footer{
-    margin-top: 100px;
-    display: inline;
-    text-align: center;
-    p{
-        margin-top: 30px;
-    }
+    @include footer;
 }
 
